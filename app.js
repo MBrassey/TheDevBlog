@@ -61,7 +61,7 @@ if (arg === "-h") {
   process.exit();
 } else if (arg === "-a") {
   console.log(
-    "Full stack CMS style blog following MVC paradigm and utilizing ORM with Sequelize and SQL."
+    "Full stack CMS type blog application utilizing ORM with Sequelize and adhering to the Model-View-Controller paradigm."
   );
   process.exit();
 } else {
