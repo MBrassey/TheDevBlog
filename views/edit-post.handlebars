@@ -3,10 +3,12 @@
     <h2>Edit Post</h2><br />
     <form class="edit-post-form card-header">
         <div>
-            <input name="post-title" type="text" size="60" value="{{post.title}}" />
-        </div>
+            <label class="text" for="post-title">Edit Title:</label>
+            <input class="input" name="post-title" type="text" size="60" value="{{post.title}}" />
+        </div><br />
         <div>
-            <textarea name="post-text" type="text">{{post.post_text}}</textarea>
+            <label class="text" for="post-text">Edit Content:</label>
+            <textarea class="input" rows="7" name="post-text" type="text"> {{post.post_text}}</textarea>
         </div>
         <div>
             <button type="submit" class="btn">Save Post</button>

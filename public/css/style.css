@@ -75,6 +75,8 @@ a {
 
 .input {
   float: right;
+  width: 70%;
+  margin-bottom: 20px;
 }
 
 .text {
