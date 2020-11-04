@@ -1,0 +1,16 @@
+{{#if posts.length}}
+<div class="col-12">
+    <h2>Your Posts</h2><br />
+    {{#each posts as |post|}}
+    <h3 class="card-header">
+        <a href="/post/{{id}}">{{title}}</a>
+        <p class="author">Posted by {{user.username}} on {{format_date created_at}}</p>
+        <a class="edit-link" href="/dashboard/edit/{{post.id}}">Edit post</a>
+    </h3><br />
+    {{/each}}
+</div>
+{{/if}}
+
+<div>
+    <button type="submit" class="btn"><a href="/dashboard/newpost">Create New Post</a></button>
+</div>

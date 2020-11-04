@@ -60,7 +60,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
   })
     .then((dbPostData) => {
       const post = dbPostData.get({ plain: true });
-      res.render("edit-posts", { post, loggedIn: true });
+      res.render("edit-post", { post, loggedIn: true });
     })
     .catch((err) => {
       console.log(err);
@@ -70,7 +70,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
 
 // Render New Post Page
 router.get("/newpost", (req, res) => {
-  res.render("new-posts");
+  res.render("new-post");
 });
 
 module.exports = router;

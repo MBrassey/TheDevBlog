@@ -16,15 +16,17 @@
         {{#if loggedIn}}
         <a href="/" class="nav-links">Home</a>
         <a href="/dashboard" class="nav-links">Dashboard</a>
-        <a href="/logout" id="logout" class="nav-links text-uppercase">Logout</a>
+        <button id="logout" class="nav-links">Logout</button>
+        <br />
         {{else}}
         <a href="/" class="nav-links">Home</a>
-        <a href="/login" class="nav-links">Login</a><br />
+        <a href="/login" class="nav-links">Login</a>
+        <br />
         {{/if}}
         <h1 class="app-title"><i class="fas fa-terminal"></i> TheDevBlog</h1>
     </header>
 
-    <main class="flex-row justify-space-between">
+    <main class="flex-row">
         {{{ body }}}
     </main>
     {{#if loggedIn}}

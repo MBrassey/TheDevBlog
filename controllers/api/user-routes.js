@@ -100,9 +100,10 @@ router.post("/login", (req, res) => {
 });
 
 // De-Authenticate User
-router.post("/logout", withAuth, (req, res) => {
+router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
+      res.redirect("/");
       res.status(204).end();
     });
   } else {
