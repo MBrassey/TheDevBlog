@@ -4,7 +4,6 @@ const withAuth = require("../../utils/auth");
 
 // Get Posts
 router.get("/", (req, res) => {
-  console.log("======================");
   Post.findAll({
     attributes: ["id", "post_text", "title", "created_at"],
     // Display List by Date

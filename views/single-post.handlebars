@@ -1,20 +1,21 @@
-<form class="signup-form">
-    <div>
-        <label for="username-signup">Username:</label>
-        <input type="text" id="username-signup" />
-    </div>
-    <div>
-        <label for="email-signup">Email:</label>
-        <input type="text" id="email-signup" />
-    </div>
-    <div>
-        <label for="password-signup">Password:</label>
-        <input type="password" id="password-signup" />
-    </div>
-    <div>
-        <button type="submit">Sign Up</button>
-    </div>
-</form>
+<div class="col-12">
+    {{> post-info post}}
 
-<!-- javascript file-->
-<script src="/javascript/signup.js"></script>
+    {{#if loggedIn}}
+    <form class="comment-form col-4">
+        <div class="card-header">
+            <textarea style="width:100%;padding:1.5%" rows="7" name="comment-body"></textarea>
+        </div>
+
+        <div>
+            <button class="btn" type="submit">Add Comment</button>
+        </div><br />
+    </form>
+    {{/if}}
+
+    {{> comments post.comments}}
+</div>
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
