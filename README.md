@@ -65,7 +65,7 @@ Full stack "Hacker News" type blog application utilizing ORM with Sequelize and 
 > [<img src="img/Preview3.gif">](https://TheDevBlog-mbrassey.herokuapp.com/api/comments)
 
 > Tests Passing
-> [<img src="img/Test.png">](https://TheDevBlog-mbrassey.herokuapp.com/)
+> [<img src="img/Tests.png">](https://TheDevBlog-mbrassey.herokuapp.com/)
 
 #### Questions
 
