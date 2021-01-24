@@ -50,7 +50,8 @@ Full stack CMS type blog application utilizing ORM with Sequelize/MySQL and adhe
 
 <h6><p align="right">:cyclone: Click the image(s) below to view the live <a id="Screenshots" href="https://TheDevBlog-mbrassey.herokuapp.com/">webapplication</a></p></h6>
 
-[<img src="img/Preview.png">](https://TheDevBlog-mbrassey.herokuapp.com/)
+> Main Feed
+> [<img src="img/Preview.png">](https://TheDevBlog-mbrassey.herokuapp.com/)
 
 > Setup
 > [<img src="img/Preview.gif">](https://TheDevBlog-mbrassey.herokuapp.com/)
